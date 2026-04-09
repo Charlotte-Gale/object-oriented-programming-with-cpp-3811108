@@ -9,11 +9,10 @@ public:
   DefensiveAbility(const std::string &name, int protection);
   ~DefensiveAbility();
 
-  // TODO: Override use()
-  // TODO: Override describe()
+  virtual void use() const override;
+  virtual void describe() const override;
 
-private:
-  int protectionAmount; // Amount of protection provided
+    private : int protectionAmount; // Amount of protection provided
 };
 
 #endif

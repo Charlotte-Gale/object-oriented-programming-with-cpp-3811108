@@ -8,8 +8,9 @@ class MeleeAttack : public Ability
 public:
   MeleeAttack(const std::string &name, int force);
 
-  // TODO: Override use()
-  // TODO: Override describe()
+  virtual void use() const override;
+  virtual void describe() const override;
+
 private:
   int impactForce;
 };
